@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+        <title>Таблица продуктов</title>
+    </head>
+    <body>
+      <div class="container">
+        <div class = "table-top">
+          <input class="search-field" type="text" >
+          <button class="btn btn-search" onclick="filtrByName1()">Serch</button>
+          <button class="btn btn-reset" onclick="resetButton()">Add New</button>
+        </div>
+         <div>
+        <table border="1">
+          <thead>
+            <tr>
+              <th class="name name-border-none">Name</th>
+              <th class="count count-border-none">
+                <div role="button"  class="btn-sort-name btn-sort-up" onclick="sortArrayName()" ></div>
+              </th>
+              <th class="price">
+                <span>Price</span>
+                <div role="button"  class="btn-sort-price btn-sort-down" onclick="sortArrayPrice()"></div>
+              </th>
+              <th class="actions">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+          </div>
+        <div class = "addform-group">
+            <form>
+                <label class="addform-label" for="addname">
+                    <span class=" addform-label-name">Name:</span>
+                    <span class=" addform-label-recuired">* Recuired field</span>
+                </label>
+                <input type="text" maxlength=15 id="addname" class="addform-field name-field"  required>
+                <label class="addform-label" for="addcount">
+                    <span>Count:</span>
+                </label>
+                <input type="number" min=0 maxlength=15 id="addcount" class="addform-field count-field"  required>
+                <label class="addform-label" for="addprice">
+                    <span>Price:</span>
+                </label>
+                <input  type="text" min=0 step="any" maxlength=15 id="addprice" class="addform-field price-field" onkeyup="return checkPriceInput(this);"  required>
+                <input type="button" class="btn btn-addform" onclick="buttonChangeValue()" value="Add"></input>
+            </form>
+        </div>
+    </div>
+<script src="main.js"></script>
+    </body>
+</html>

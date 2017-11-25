@@ -1,0 +1,142 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+  width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-field {
+  width: 256px;
+  height: 20px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.btn-search { width: 68px; height: 24px;}
+.btn-reset {float: right; width: 96px; height: 24px;}
+
+.btn-sort-up {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 14px solid grey;
+  float: right;
+ margin-right: 18px;
+}
+
+.btn-sort-down {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top:  14px solid grey;
+  float: right;
+  margin-right: 18px;
+
+}
+
+.table { font-size: 14px;}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 600px;
+  height: auto;
+}
+
+td,th {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.name {width: 224px;}
+.count {width: 56px;}
+.price {width: 100px;}
+.actions {width: 200px;}
+.name-border-none {border-right: none;}
+.count-border-none {border-left: none;}
+.name-text {text-align: left; padding-left: 15px;}
+
+.btn {
+  background-color: white;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+.btn-edit,.btn-delete {
+  width: 70px;
+  height: 28px;
+  margin-left:auto;
+  margin-right: auto;
+}
+.addform-group {
+  margin-top: 40px;
+  height: 40px;
+  float:left;
+}
+
+.addform-field { height: 28px; border: 1px solid darkgray; border-radius: 5px;}
+.name-field, .price-field {width: 186px; margin-right: 6px; padding-left: 5px;}
+.count-field {width: 35px; margin-right: 12px; padding-left: 5px;}
+
+.addform-label {
+  font-size: 18px;
+  margin-left: 3px;
+  margin-top:-30px;
+  position: absolute;
+}
+
+.addform-label-name {
+  margin-top: -32px;
+  border: 2px solid #aedaa2; /* 5faed9 */
+}
+
+.addform-label-recuired {
+  width: 120px;
+  margin-left: 55px;
+  margin-top: -21px;
+  position: absolute;
+}
+
+.btn-addform {
+  font-size: 18px;
+  float:right;
+  width: 140px;
+  height: 32px;
+}
+
+form label {
+    position:relative;
+}
+.name-error-message {
+  font-size: 12px;
+    position:absolute;
+    margin-top: 42px;
+    width:200px;
+    color:red;
+}
+.count-error-message {
+  font-size: 12px;
+  position:absolute;
+  margin-top: 42px;
+  width:200px;
+  color:red;
+}
+.price-error-message {
+ font-size: 12px;
+ position:absolute;
+ margin-top: -5px;
+ width:200px;
+ color:red;
+}
+.border-error { height: 28px; border: 1px solid red; border-radius: 5px;}
